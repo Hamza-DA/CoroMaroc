@@ -67,6 +67,7 @@ nav{
 .box{
 }
 .container{
+    width: 450px;
     margin: auto;
     height: 70px;
     display: flex;

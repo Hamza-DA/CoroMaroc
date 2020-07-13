@@ -9,20 +9,18 @@ burger.addEventListener('click', () =>{
     linedown.classList.toggle('toggle')
 })
 
-const data = 'https://api.covid19api.com/summary';
+const data = 'https://disease.sh/v3/covid-19/countries/MA?yesterday=false';
 
 async function getdata() {
     const response = await fetch(data)
     const dt = await response.json();
 
-    let moro = dt.Countries[114]
-
-    let trec = moro.TotalRecovered;
-    let tconfirmed = moro.TotalConfirmed;
-    let nconfirmed = moro.NewConfirmed;
-    let ndth = moro.NewDeaths;
-    let tdth = moro.TotalDeaths;
-    let nrec = moro.NewRecovered;
+    let trec = dt.recovered;
+    let tconfirmed = dt.cases;
+    let nconfirmed = dt.todayCases;
+    let ndth = dt.todayDeaths;
+    let tdth = dt.deaths;
+    let nrec = dt.todayRecovered;
 
     document.getElementById('NewRecovered').textContent = nrec;
     document.getElementById('TotalRecovered').textContent = trec;
@@ -32,3 +30,8 @@ async function getdata() {
     document.getElementById('TotalDeaths').textContent = tdth;
 }
 getdata();
+
+let d = new Date();
+let d2 = new Date();
+let days = ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"];
+document.getElementById('date').innerHTML = days[d.getDay() - 1] + ' ' + d2.getDate();
