@@ -8,6 +8,8 @@
 }
 body{
     background-color: #FAF9F9;
+    right: 0;
+    left: 0;
 }
 nav{
     background-color: #BC4749;
@@ -16,6 +18,7 @@ nav{
     margin: 0 auto;
     width: 100%;
     max-width: 1400px;
+
 }
 .content{
     min-height: 50px;
@@ -37,7 +40,7 @@ nav{
 }
 .burger{
     cursor: pointer;
-    z-index: 10;
+    z-index: 60;
 }
 .toggle.lineup{
     transform: rotateZ(45deg) translateY(6px);
@@ -61,8 +64,10 @@ nav{
     max-width: 1400px;
     margin: 0 auto;
 }
+.box{
+}
 .container{
-    width: 430px;
+    margin: auto;
     height: 70px;
     display: flex;
     align-items: center;
@@ -132,17 +137,11 @@ nav{
     max-width: 1400px;
     
 }
-.back img{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -10;
-}
 .overlay {
     height: 0;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     top: 0;
     background-color: #F1F1F1;

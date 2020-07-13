@@ -1,0 +1,13 @@
+@media screen and (max-width: 480px){
+    .box{
+     transform: scale(80%);
+    }
+    .numshol{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 848px){
+    .numshol{
+        width: 90%;
+    }
+}
