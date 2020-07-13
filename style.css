@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #FAF9F9;
+}
+nav{
+    background-color: #BC4749;
+}
+.navholder{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+}
+.content{
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+.content h1{
+    color: #F1F1F1;
+}
+.burger div{
+    height: 3px;
+    width: 25px;
+    background-color: #F1F1F1;
+    margin: 5px;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+.burger{
+    cursor: pointer;
+    z-index: 10;
+}
+.toggle.lineup{
+    transform: rotateZ(45deg) translateY(6px);
+    background-color: #200E32;
+}
+.toggle.linedown{
+    transform: rotateZ(-45deg) translateY(-6px);
+    background-color: #200E32;
+}
+.maintitle{
+    color: #200E32;
+    text-align: center;
+    font-size: 	1.875rem;
+    margin: 30px 0;
+}
+.maincontent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.container{
+    width: 430px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: #EDEDEE;
+    border-radius: 35px;
+    box-shadow: 0 0 12px #cfcfcf;
+}
+.container img{
+    display: flex;
+    height: max-content;
+}
+.container h3{
+    color: #200E32;
+    padding-right: 20px;
+    width: 190px;
+    text-align: end;
+}
+.colored{
+    border-radius: 35px;
+    width: 180px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 12px #cfcfcf;
+}
+.colored h4{
+    font-size: 1.875rem;
+    color: #FAF9F9;
+}
+.lefts div{
+    margin: 30px 0;
+}
+.rights div{
+    margin: 30px 0;
+}
+.alert{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px ;
+    width: 260px;
+    animation: alert 2s ease infinite;
+}
+
+@keyframes alert{
+    0%{
+        transform: scale(0.99);
+    }
+    50%{
+        transform: scale(1.09);
+    }
+    100%{
+        transform: scale(0.99);
+    }
+}
+.back{
+    position: fixed;
+    bottom: 0;
+}
+.co{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px;
+    
+}
+.back img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+}
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #F1F1F1;
+    overflow-x: hidden; 
+    transition: 0.5s;
+  }
+.overlayop{
+    height: 100%;
+}
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #200E32;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+}
+.numshol{
+    max-width: 800px;
+    background-color: #F1F1F1;
+    margin: 20px auto;
+    border-radius: 30px;
+}
+.nums{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-column-gap: 6px;
+    grid-row-gap:6px;
+}
+.g{
+    padding: 20px;
+    border-radius: 30px;
+    min-height: 200px;
+    align-items: center;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    margin: 20px;
+}
+h3, h4{
+    color: #F9F9FB;
+    font-weight: 900;
+}
+h4{
+    font-size: 1.4375rem;
+}
+a{
+    color: #F9F9FB;
+}
+.footer{
+    background-color: #262626;
+}
+.ft{
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 30px;
+}
