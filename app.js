@@ -24,11 +24,11 @@ async function getdata() {
     let tdth = dt.deaths;
     let nrec = dt.todayRecovered;
 
-    document.getElementById('NewRecovered').textContent = nrec;
+    document.getElementById('NewRecovered').textContent = '+ ' + nrec;
     document.getElementById('TotalRecovered').textContent = trec;
     document.getElementById('TotalConfirmed').textContent = tconfirmed;
-    document.getElementById('NewConfirmed').textContent = nconfirmed;
-    document.getElementById('NewDeaths').textContent = ndth;
+    document.getElementById('NewConfirmed').textContent = '+ ' + nconfirmed;
+    document.getElementById('NewDeaths').textContent = '+ ' + ndth;
     document.getElementById('TotalDeaths').textContent = tdth;
 }
 getdata();
