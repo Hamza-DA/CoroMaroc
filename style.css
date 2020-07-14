@@ -10,6 +10,7 @@ body{
     background-color: #FAF9F9;
     right: 0;
     left: 0;
+    overflow-x: hidden;
 }
 nav{
     background-color: #BC4749;
@@ -57,26 +58,32 @@ nav{
     margin: 30px 0;
 }
 .maincontent{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
+    grid-column-gap: 100px;
+    grid-row-gap: 20px;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 40px auto;
+
 }
-.box{
+.flaho{
+    position: absolute;
+    left: 0;
+    bottom: -30%;
+    z-index: -10;
+    display: none;
 }
 .container{
     width: 450px;
     margin: auto;
-    height: 70px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
-    background-color: #EDEDEE;
+    background-color: #ededeea6;
     border-radius: 35px;
-    box-shadow: 0 0 12px #cfcfcf;
+    box-shadow: 0 0 12px #cfcfcfbd;
 }
 .container img{
     display: flex;
@@ -100,6 +107,10 @@ nav{
 .colored h4{
     font-size: 1.875rem;
     color: #FAF9F9;
+}
+.lefts{
+    align-items: center;
+    justify-content: center;
 }
 .lefts div{
     margin: 30px 0;
@@ -172,7 +183,6 @@ nav{
   .overlay .closebtn {
     position: absolute;
     top: 20px;
-    right: 45px;
     font-size: 60px;
   }
   
@@ -186,8 +196,8 @@ nav{
 }
 .numshol{
     max-width: 800px;
-    background-color: #F1F1F1;
-    margin: 20px auto;
+    background-color: #ededeea6;
+    margin: 40px auto;
     border-radius: 30px;
 }
 .nums{

@@ -34,4 +34,7 @@ getdata();
 let d = new Date();
 let d2 = new Date();
 let days = ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"];
-document.getElementById('date').innerHTML = days[d.getDay() - 1] + ' ' + d2.getDate();
+let m = new Date();
+let month = ['يناير', 'فبراير', 'مارس', 'أبريل', 'ماي', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر' ,'نوفمبر', 'ديسمبر']
+document.getElementById('date').innerHTML = days[d.getDay() - 1] + ' ' + d2.getDate() + ' ' + month[m.getMonth()];
+
