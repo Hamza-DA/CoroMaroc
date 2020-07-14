@@ -6,14 +6,14 @@
         height: auto;
         margin: 20px auto;
         width: inherit;
+        padding:5px;
     }
     .maincontent{
         width: 90%;
         display: block;
     }
     .container h3{
-        width: 100px;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
     .colored{
         width: 100px;
