@@ -18,6 +18,7 @@
     .colored{
         width: 100px;
         height: inherit;
+        margin-left: 6px;
     }
     .colored h4{
         font-size: 1.3rem;
