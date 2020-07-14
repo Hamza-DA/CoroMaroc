@@ -13,13 +13,16 @@ body{
     overflow-x: hidden;
 }
 nav{
-    background-color: #BC4749;
+    background-color: #555B6E;
+    box-shadow: 0 0 12px #818181bd;
+    position: sticky;
+    top: 0;
+    z-index: 12;
 }
 .navholder{
     margin: 0 auto;
     width: 100%;
     max-width: 1400px;
-
 }
 .content{
     min-height: 50px;
@@ -44,12 +47,14 @@ nav{
     z-index: 60;
 }
 .toggle.lineup{
-    transform: rotateZ(45deg) translateY(6px);
-    background-color: #200E32;
+    transform: rotateZ(45deg) translateY(11px);
 }
 .toggle.linedown{
-    transform: rotateZ(-45deg) translateY(-6px);
-    background-color: #200E32;
+    transform: rotateZ(-45deg) translateY(-11px);
+}
+.toggle.linemed{
+    transform: translateX(-30px);
+    opacity: 0;
 }
 .maintitle{
     color: #200E32;
@@ -64,7 +69,6 @@ nav{
     grid-row-gap: 20px;
     max-width: 1400px;
     margin: 40px auto;
-
 }
 .flaho{
     position: absolute;
@@ -148,7 +152,6 @@ nav{
     display: flex;
     margin: 0 auto;
     max-width: 1400px;
-    
 }
 .overlay {
     height: 0;
@@ -160,7 +163,7 @@ nav{
     background-color: #F1F1F1;
     overflow-x: hidden; 
     transition: 0.5s;
-  }
+}
 .overlayop{
     height: 100%;
 }
