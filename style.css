@@ -205,7 +205,7 @@ nav{
     box-shadow: 0 0 12px #9494947e;
     margin: 40px auto;
     border-radius: 30px;
-    padding: 0 10px;
+    padding: 0 10px 10px 10px;
 }
 .nums{
     display: grid;
