@@ -2,11 +2,13 @@ const burger = document.querySelector(".burger");
 const overlay = document.querySelector(".overlay");
 const lineup = document.querySelector(".lineup");
 const linedown = document.querySelector(".linedown");
+const linemed = document.querySelector(".linemed");
 
 burger.addEventListener('click', () =>{
     overlay.classList.toggle('overlayop')
     lineup.classList.toggle('toggle')
     linedown.classList.toggle('toggle')
+    linemed.classList.toggle('toggle')
 })
 
 const data = 'https://disease.sh/v3/covid-19/countries/MA?yesterday=false';
