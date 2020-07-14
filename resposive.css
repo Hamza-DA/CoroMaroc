@@ -13,12 +13,11 @@
         display: block;
     }
     .container h3{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .colored{
         width: 100px;
         height: inherit;
-        margin-left: 6px;
     }
     .colored h4{
         font-size: 1.3rem;
