@@ -12,11 +12,15 @@
         display: block;
     }
     .container h3{
-        width: 100px;
-        font-size: 0.9rem;
+        width: auto;
+        font-size: 1rem;
         height: 60px;
+        text-align: ;
+        align-items: center;
+        display: flex;
     }
     .colored{
+        margin-left: 12px;
         width: 100px;
         height: inherit;
     }
