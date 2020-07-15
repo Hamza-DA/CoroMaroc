@@ -24,6 +24,7 @@ async function getdata() {
     let tdth = dt.deaths;
     let nrec = dt.todayRecovered;
 
+    document.title = "CoroMaroc • " + tconfirmed + " • حصيلة اليوم";
     document.getElementById('NewRecovered').textContent = '+ ' + nrec;
     document.getElementById('TotalRecovered').textContent = trec;
     document.getElementById('TotalConfirmed').textContent = tconfirmed;
@@ -40,3 +41,6 @@ let m = new Date();
 let month = ['يناير', 'فبراير', 'مارس', 'أبريل', 'ماي', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر' ,'نوفمبر', 'ديسمبر']
 document.getElementById('date').innerHTML = days[d.getDay() - 1] + ' ' + d2.getDate() + ' ' + month[m.getMonth()];
 
+function alt(){
+    alert("هذا الموقع غير رسمي ولا يتبع لوزارة الصحة المغربية")
+}
