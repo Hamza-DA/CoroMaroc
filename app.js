@@ -24,7 +24,7 @@ async function getdata() {
     let tdth = dt.deaths;
     let nrec = dt.todayRecovered;
 
-    document.title = "CoroMaroc • " + tconfirmed + " • حصيلة اليوم";
+    document.title = "CoroMaroc • " + nconfirmed + " • حصيلة اليوم";
     document.getElementById('NewRecovered').textContent = '+ ' + nrec;
     document.getElementById('TotalRecovered').textContent = trec;
     document.getElementById('TotalConfirmed').textContent = tconfirmed;
