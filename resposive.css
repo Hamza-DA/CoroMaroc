@@ -1,0 +1,35 @@
+@media screen and (max-width: 480px){
+    .numshol{
+        width: 80%;
+    }
+    .container{
+        height: auto;
+        margin: 20px auto;
+        width: inherit;
+    }
+    .maincontent{
+        width: 90%;
+        display: block;
+    }
+    .container h3{
+        width: auto;
+        font-size: 1rem;
+        height: 60px;
+        text-align: ;
+        align-items: center;
+        display: flex;
+    }
+    .colored{
+        margin-left: 12px;
+        width: 100px;
+        height: inherit;
+    }
+    .colored h4{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 848px){
+    .numshol{
+        width: 90%;
+    }
+}
